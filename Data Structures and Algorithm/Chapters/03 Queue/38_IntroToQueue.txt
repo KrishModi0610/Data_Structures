@@ -1,0 +1,16 @@
+LECTURE 38 Introduction To Queue
+
+Queue -> First In First Out(FIFO)
+Queue ADT   
+1.Data - i)Storage
+        ii)InsEnd
+       iii)DelEnd
+       
+2.Methods - i)enqueue
+           ii)dequeue
+          iii)lastVal
+           iv)firstVal
+            v)peek(pos)
+           vi)isEmpty
+          vii)isFull
+         viii)printQueue

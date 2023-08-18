@@ -1,0 +1,54 @@
+LECTURE 35 MANUALLY Converting
+
+Infix - operand <operator> operand
+Prefix - <operator> operand operand
+Postfix - operand operand <operator>
+
+Prefix ==>
+Step 1 -> Parenthesize the Operators
+Step 2 -> Arrange accordingly <operator> operand operand
+Postfix ==>
+Step 1 -> Parenthesize the Operators
+Step 2 -> Arrange accordingly operand operand <operator>
+
+Example 1 ==> x - y * z
+Prefix ==>
+Step 1 -- (x - (y * z))
+Step 2 -- (-x (* y z))
+Step 3 -- Answer = -x*yz
+
+Postfix ==>
+Step 1 -- (x - (y * z))
+Step 2 -- (x - (y z *))
+Step 3 -- Answer = xyz*-
+
+
+Example 2 ==> p-q-r/a
+Postfix ==>
+1.((p-q)-(r/a))
+2.((pq-)-(ra/))
+3.pq-ra/-
+
+Prefix ==>
+1.((p-q)-(r/a))
+2.((-pq)-(/ra))
+2.--pq/ra
+
+Example 3  ==>((A+B)–C*(D/E))+F
+Postfix==>
+1. (((A+B)-(C*(D/E)))+F)
+2. (((A+B)-(C*(DE/)))+F)
+3. (((A+B)-(CDE/ * ))+F)
+4. (((AB+)-(CDE/ * ))+F)
+5. ((AB+CDE/ * -)+F)
+6. (AB+CDE/ *-)+F
+7. AB+CDE/ *-F+
+
+Example 4 ==> (m-n)*(p+q)
+Postfix==>
+1.(mn-)*(pq+)
+2.mn-pq+*
+
+Prefix ==>
+1.(-mn)*(+pq)
+2.*-mn+pq

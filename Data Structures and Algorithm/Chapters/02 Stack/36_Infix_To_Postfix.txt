@@ -1,0 +1,8 @@
+LECTURE 36 Using Stack 
+
+Step 1 - Print the operand 
+Step 2 - Push the operator in the Stack
+Step 3 - If the Precedence of operator is more than the operator in the Stack , then PUSH  
+ the operator
+Step 4 - Else If Precedence of operator is less than or equal than the operator in the Stack , then first POP the stack till the precedence of the operator in the stack is less and then PUSH the operator.
+Step 5 - At the end of the expression, empty the Stack.
